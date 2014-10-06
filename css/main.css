@@ -3656,6 +3656,10 @@ input[type="radio"] + label span {
 input[type="radio"]:checked + label span {
     background:url(../img/check_radio_sheet.png) right top no-repeat;
 }
+.ital{
+    font-size: 0.9em;
+    color: rgba(0,0,0,0.5);
+}
 @media (max-width:767px){
     .hidden-xs-tab a:hover strong.hidden-strong{
         display: block;
