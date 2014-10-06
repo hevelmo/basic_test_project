@@ -807,7 +807,11 @@ a.sidebar-title:focus {
     border-bottom: 2px solid #dae0e8;
     background: rgba(218, 224, 232, .15);
 }
-
+.block-title-inner {
+    margin: 0 auto 20px;
+    border-bottom: 2px solid #dae0e8;
+    background: rgba(218, 224, 232, .15);
+}
 .block-title h1,
 .block-title h2,
 .block-title h3,
@@ -1439,7 +1443,7 @@ a[data-toggle="lightbox-image"]:hover img {
 }
 
 .navbar.navbar-inverse.navbar-glass {
-    background: rgba(92, 205, 222, .9);
+    background: rgba(155, 10, 10, 0.8);
 }
 
 .navbar.navbar-default,
@@ -3651,6 +3655,21 @@ input[type="radio"] + label span {
 }
 input[type="radio"]:checked + label span {
     background:url(../img/check_radio_sheet.png) right top no-repeat;
+}
+@media (max-width:767px){
+    .hidden-xs-tab a:hover strong.hidden-strong{
+        display: block;
+        position: absolute;
+        width: 189px;
+        padding: 0;
+        background: rgba(255,255,255,0.9);
+        border: 1px solid rgba(0,0,0,0.5);
+        border-radius: 3px;
+        box-shadow: 0 0 3px rgba(0,0,0,0.5);
+        color: #000;
+        top: 50px;
+        left: -15px;
+    }
 }
 
 
