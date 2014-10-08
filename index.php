@@ -102,15 +102,17 @@
                         <!-- END Main Sidebar Toggle Button -->
 
                         <!-- Header Link -->
-                        <!--<li class="hidden-xs animation-fadeInQuick">
+                        <!--
+                        <li class="hidden-xs animation-fadeInQuick">
                             <a href=""><strong>Bienvenido</strong></a>
-                        </li>-->
+                        </li>
                         <li class="hidden-xs-tab animation-fadeInQuick active">
                             <a href="#blk-tbs-cont-inf_personal"><i class="fa fa-bookmark fa-fw" style="padding-right: 20px;"></i><strong class="hidden-strong animation-fadeInQuick">Información Personal</strong></a>
                         </li>
                         <li class="hidden-xs-tab animation-fadeInQuick">
                             <a href="#blk-tbs-cont-for_acedemica"><i class="fa fa-mortar-board fa-fw" style="padding-right: 20px;"></i><strong class="hidden-strong animation-fadeInQuick">Formación Académica</strong></a>
                         </li>
+                        -->
                         <li class="hidden-xs-tab animation-fadeInQuick">
                             <a href="#blk-tbs-cont-exp_laboral"><i class="fa fa-suitcase fa-fw" style="padding-right: 20px;"></i><strong class="hidden-strong animation-fadeInQuick">Experiencia Laboral</strong></a>
                         </li>
@@ -124,6 +126,7 @@
                 <div id="page-content" style="max-width: 100%;">
                     <div class="tab-content">
                         <!-- FORMULARIO: Información Personal -->
+                        <!--
                             <div class="form_content animation-fadeInQuick tab-pane" id="blk-tbs-cont-inf_personal">
                                 <div class="table_form_container">
                                     <header class="caption_info">
@@ -832,8 +835,10 @@
                                     </section>
                                 </div>
                             </div>
+                        -->
                         <!-- END -> FORMULARIO: Información Personal -->
                         <!-- FORMULARIO: Formación Académica -->
+                        <!--
                             <div class="form_content animation-fadeInQuick tab-pane" id="blk-tbs-cont-for_acedemica">
                                 <div class="table_form_container">
                                     <header class="caption_info">
@@ -1092,6 +1097,7 @@
                                     </section>
                                 </div>
                             </div>
+                        -->
                         <!-- END -> FORMULARIO: Formación Académica -->
                         <!-- FORMULARIO: Experiencia Laboral -->
                             <div class="form_content animation-fadeInQuick tab-pane active" id="blk-tbs-cont-exp_laboral">
@@ -1107,352 +1113,902 @@
                                     <section class="body_form_info" id='container_exp_laboral'>
                                         <div class="form_inline_content" id='container_exp_laboral'>
                                             <form id='survey-professional'>
-                                                <div class="row">
-                                                    <div class="col-xs-12">
-                                                        <div class="block full">
-                                                            <div class="block-title" style="text-align: left; padding: 5px;">
-                                                                <i class="fa fa-ellipsis-v fa-fw" style="padding-right: 10px;"></i>
-                                                                ¿Has trabajado antes?
-                                                            </div>
-                                                            <div class="from-group">
-                                                                <div class="col-xs-6">
-                                                                    <label class='radio-inline'>
-                                                                        <input type='radio' 
-                                                                           class='proRadio canExpPre'
-                                                                           id='canExpPreS' 
-                                                                           name='exp_previous' 
-                                                                           value='Si' 
-                                                                           data-entorno='work'>
-                                                                           <label for="canExpPreS"><span></span>Sí</label>
-                                                                    </label>
-                                                                </div>
-                                                                <div class="col-xs-6">
-                                                                    <label class='radio-inline'>
-                                                                        <input type='radio' 
-                                                                           class='proRadio canExpPre'
-                                                                           id='canExpPreN' 
-                                                                           name='exp_previous' 
-                                                                           value='No' 
-                                                                           data-entorno='work'>
-                                                                           <label for="canExpPreN"><span></span>No</label> 
-                                                                      </label>
-                                                                </div>
-                                                            </div><br>
-                                                        </div>
+                                                <div class="block">
+                                                    <div class="block-title" style="text-align: left; padding: 5px;">
+                                                        <i class="fa fa-ellipsis-v fa-fw" style="padding-right: 10px;"></i>
+                                                        ¿Has trabajado antes?
                                                     </div>
-                                                </div>
-                                                <!--<div class="row exp-pre" style="display:none">-->
-                                                <div class="row exp-pre" style="">
-                                                    <div class="col-xs-12">
+                                                    <div class="form-group">
                                                         <div class="block full">
-                                                            <div class="block-title" style="text-align: left; padding: 5px;">
-                                                                <i class="fa fa-ellipsis-v fa-fw" style="padding-right: 10px;"></i>
-                                                                ¿Actualmente Laboras?                                                    </div>
-                                                            <div class="from-group">
-                                                                <div class="col-xs-6">
-                                                                    <label class='radio-inline'>
-                                                                        <input type='radio' 
-                                                                           class='proRadio canExpCurrent' 
-                                                                           id='canExpCurrentS' 
-                                                                           name='exp_current' 
-                                                                           value='Si' 
-                                                                           data-entorno='work'>
-                                                                           <label for="canExpCurrentS"><span></span>Sí</label>
-                                                                    </label>
-                                                                </div>
-                                                                <div class="col-xs-6">
-                                                                    <label class='radio-inline'>
-                                                                        <input type='radio' 
-                                                                           class='proRadio canExpCurrent' 
-                                                                           id='canExpCurrentN' 
-                                                                           name='exp_current' 
-                                                                           value='No' 
-                                                                           data-entorno='work'>
-                                                                           <label for="canExpCurrentN"><span></span>No</label> 
-                                                                      </label>
-                                                                </div>
-                                                            </div><br>
-                                                        </div>
-                                                    </div>
-                                                </div>
-                                                <!-- Formulario en caso de seleccionar "SI" -->
-                                                <!--<div class="row exp-pre-si" style="display:none">-->
-                                                <div class="row exp-pre-si" style="">
-                                                    <div class="col-md-12">
-                                                        <div class="block full">
-                                                            <div class="block-title" style="text-align: left; padding: 5px;">
-                                                                <i class="fa fa-ellipsis-v fa-fw" style="padding-right: 10px;"></i>
-                                                                Ingresa el lugar actual de trabajo
-                                                        </div>  
-                                                        <div class="row">
-                                                            <div class="col-md-6">
-                                                                <div class="block-title-inner" style="text-align: left; padding: 5px;">
-                                                                    <i class="fa fa-ellipsis-v fa-fw" style="padding-right: 10px;"></i>
-                                                                    Puesto                                                   
-                                                                </div>
-                                                                <div class="from-group">
-                                                                    <div class="col-md-2"></div>
-                                                                    <div class="col-md-8">
-                                                                        <input type='text' 
-                                                                           class='form-control proInput wplElement' 
-                                                                           id='canWplJob' 
-                                                                           name='wpl_job' 
-                                                                           data-entorno='work_add_puesto' 
-                                                                           placeholder='. . .'>
-                                                                    </div>
-                                                                    <div class="col-md-2"></div>
-                                                                </div>
+                                                             <div class="col-xs-6">
+                                                                <label class='radio-inline'>
+                                                                    <input type='radio' 
+                                                                       class='proRadio canExpPre'
+                                                                       id='canExpPreS' 
+                                                                       name='exp_previous' 
+                                                                       value='Si' 
+                                                                       data-entorno='work'>
+                                                                    <label for="canExpPreS"><span></span>Sí</label>
+                                                                </label>
                                                             </div>
-                                                            <div class="col-md-6">
-                                                                <div class="block-title-inner" style="text-align: left; padding: 5px;">
-                                                                    <i class="fa fa-ellipsis-v fa-fw" style="padding-right: 10px;"></i>
-                                                                    Nombre Empresa
-                                                                </div>
-                                                                <div class="from-group">
-                                                                    <div class="col-md-2"></div>
-                                                                    <div class="col-md-8">
-                                                                        <input type='text' 
-                                                                           class='form-control proInput wplElement' 
-                                                                           id='canWplCompany' 
-                                                                           name='wpl_company' 
-                                                                           data-entorno='work_add_empresa' 
-                                                                           placeholder='. . .'>
-                                                                    </div>
-                                                                    <div class="col-md-2"></div>
-                                                                </div>
-                                                            </div>
-                                                            <div class="col-md-6">
-                                                                <div class="block-title-inner" style="text-align: left; margin-top: 20px; padding: 5px;">
-                                                                    <i class="fa fa-ellipsis-v fa-fw" style="padding-right: 10px;"></i>
-                                                                    Año Inicio
-                                                                </div>
-                                                                <div class="from-group">
-                                                                    <div class="col-md-2"></div>
-                                                                    <div class="col-md-8">
-                                                                        <input type='text' 
-                                                                           class='form-control proInput wplElement' 
-                                                                           id='canWplBeginning' 
-                                                                           name='wpl_beginning' 
-                                                                           data-entorno='work_add_inicio' 
-                                                                           placeholder='. . .'>
-                                                                    </div>
-                                                                    <div class="col-md-2"></div>
-                                                                </div>
-                                                            </div><br><br>
-                                                            <div class="col-md-6">
-                                                                <div class="block-title-inner" style="text-align: left; margin-top: 20px; padding: 5px;">
-                                                                    <i class="fa fa-ellipsis-v fa-fw" style="padding-right: 10px;"></i>
-                                                                    Año Finalización
-                                                                </div>
-                                                                <div class="from-group">
-                                                                    <div class="col-md-2"></div>
-                                                                    <div class="col-md-8">
-                                                                        <input type='text' 
-                                                                           class='form-control proInput wplElement' 
-                                                                           id='canWplEnding' 
-                                                                           name='wpl_ending' 
-                                                                           data-entorno='work_add_fin' 
-                                                                           placeholder='Default...'>
-                                                                    </div>
-                                                                    <div class="col-md-2"></div>
-                                                                </div>
-                                                            </div>
-                                                            <!--
-                                                            <div class="col-md-6">
-                                                                <div class="block-title-inner" style="text-align: left; margin-top: 20px; padding: 5px;">
-                                                                    <i class="fa fa-ellipsis-v fa-fw" style="padding-right: 10px;"></i>
-                                                                    Estatus
-                                                                </div>
-                                                                <div class="from-group">
-                                                                    <div class="col-md-2"></div>
-                                                                    <div class="col-md-8">
-                                                                        <select class='form-control proSelect wplElement' 
-                                                                            id='canWplStatus' 
-                                                                            name='wpl_status' 
-                                                                            data-entorno='work_add_status'>
-                                                                            <option value=''>Estatus</option>
-                                                                            <option value='Actual'>Actual</option>
-                                                                            <option value='Terminación por despido'>
-                                                                            Terminación por despido
-                                                                            </option>
-                                                                            <option value='Terminación por renuncia'>Terminación por renuncia</option>
-                                                                        </select>
-                                                                    </div>
-                                                                    <div class="col-md-2"></div>
-                                                                </div>
-                                                            </div>-->
-                                                        </div>
-                                                    </div>
-                                                    <div class="row">
-                                                        <div class="block full">
-                                                            <a href="" class="label label-default" style="padding: 5px 15px;"><i class="fa fa-plus" style="padding: 5px;"></i>Agragar Otro...</a>
-                                                        </div>
-                                                    </div>
-                                                </div>
-                                                <!-- Formulario en caso de seleccionar "NO" -->
-                                                <div class="row exp-pre-no" style="display:none;">
-                                                    <div class="col-md-12">
-                                                        <div class="block full">
-                                                            <div class="block-title" style="text-align: left; padding: 5px;">
-                                                                <i class="fa fa-ellipsis-v fa-fw" style="padding-right: 10px;"></i>
-                                                                Ingresa los lugares en los que has trabajado - <i class="ital">maximo 2 areas de trabajo</i>
-                                                        </div>  
-                                                        <div class="row">
-                                                            <div class="col-md-4">
-                                                                <div class="block-title-inner" style="text-align: left; padding: 5px;">
-                                                                    <i class="fa fa-ellipsis-v fa-fw" style="padding-right: 10px;"></i>
-                                                                    Puesto                                                   
-                                                                </div>
-                                                                <div class="from-group">
-                                                                    <div class="col-md-12">
-                                                                        <input type='text' 
-                                                                           class='form-control proInput wplElement' 
-                                                                           id='canWplJob' 
-                                                                           name='wpl_job' 
-                                                                           data-entorno='work_add_puesto' 
-                                                                           placeholder='. . .'>
-                                                                    </div>
-                                                                </div>
-                                                            </div>
-                                                            <div class="col-md-4">
-                                                                <div class="block-title-inner" style="text-align: left; padding: 5px;">
-                                                                    <i class="fa fa-ellipsis-v fa-fw" style="padding-right: 10px;"></i>
-                                                                    Nombre Empresa                                                  
-                                                                </div>
-                                                                <div class="from-group">
-                                                                    <div class="col-md-12">
-                                                                        <input type='text' 
-                                                                           class='form-control proInput wplElement' 
-                                                                           id='canWplCompany' 
-                                                                           name='wpl_company' 
-                                                                           data-entorno='work_add_empresa' 
-                                                                           placeholder='. . .'>
-                                                                    </div>
-                                                                </div>
-                                                            </div>
-                                                            <div class="col-md-4">
-                                                                <div class="block-title-inner" style="text-align: left; padding: 5px;">
-                                                                    <i class="fa fa-ellipsis-v fa-fw" style="padding-right: 10px;"></i>
-                                                                    Año Inicio
-                                                                </div>
-                                                                <div class="from-group">
-                                                                    <div class="col-md-12">
-                                                                        <input type='text' 
-                                                                           class='form-control proInput wplElement' 
-                                                                           id='canWplBeginning' 
-                                                                           name='wpl_beginning' 
-                                                                           data-entorno='work_add_inicio' 
-                                                                           placeholder='. . .'>
-                                                                    </div>
-                                                                </div>
-                                                            </div>
-                                                            <div class="col-md-6">
-                                                                <div class="block-title-inner" style="text-align: left; margin-top: 20px; padding: 5px;">
-                                                                    <i class="fa fa-ellipsis-v fa-fw" style="padding-right: 10px;"></i>
-                                                                    Año Finalización
-                                                                </div>
-                                                                <div class="from-group">
-                                                                    <div class="col-md-2"></div>
-                                                                    <div class="col-md-8">
-                                                                        <input type='text' 
-                                                                           class='form-control proInput wplElement' 
-                                                                           id='canWplEnding' 
-                                                                           name='wpl_ending' 
-                                                                           data-entorno='work_add_fin' 
-                                                                           placeholder='. . .'>
-                                                                    </div>
-                                                                    <div class="col-md-2"></div>
-                                                                </div>
-                                                            </div>
-                                                            <div class="col-md-6">
-                                                                <div class="block-title-inner" style="text-align: left; margin-top: 20px; padding: 5px;">
-                                                                    <i class="fa fa-ellipsis-v fa-fw" style="padding-right: 10px;"></i>
-                                                                    Estatus
-                                                                </div>
-                                                                <div class="from-group">
-                                                                    <div class="col-md-2"></div>
-                                                                    <div class="col-md-8">
-                                                                        <select class='form-control proSelect wplElement' 
-                                                                            id='canWplStatus' 
-                                                                            name='wpl_status' 
-                                                                            data-entorno='work_add_status'>
-                                                                            <option value=''>Estatus</option>
-                                                                            <option value='Actual'>Actual</option>
-                                                                            <option value='Terminación por despido'>
-                                                                            Terminación por despido
-                                                                            </option>
-                                                                            <option value='Terminación por renuncia'>Terminación por renuncia</option>
-                                                                        </select>
-                                                                    </div>
-                                                                    <div class="col-md-2"></div>
-                                                                </div>
+                                                            <div class="col-xs-6">
+                                                                <label class='radio-inline'>
+                                                                    <input type='radio' 
+                                                                       class='proRadio canExpPre'
+                                                                       id='canExpPreN' 
+                                                                       name='exp_previous' 
+                                                                       value='No' 
+                                                                       data-entorno='work'>
+                                                                    <label for="canExpPreN"><span></span>No</label> 
+                                                                </label>
                                                             </div>
                                                         </div>
                                                     </div>
                                                 </div>
-                                                <div class="row exp-pre-jap" style="/*display:none;*/">
-                                                    <div class="col-md-12">
+                                                <div class="block exp-pre" style="">
+                                                    <div class="block-title" style="text-align: left; padding: 5px;">
+                                                        <i class="fa fa-ellipsis-v fa-fw" style="padding-right: 10px;"></i>
+                                                        ¿Actualmente Laboras?
+                                                    </div>
+                                                    <div class="form-group">
                                                         <div class="block full">
-                                                            <div class="block-title" style="text-align: left; padding: 5px;">
-                                                                <i class="fa fa-ellipsis-v fa-fw" style="padding-right: 10px;"></i>
-                                                                Referencia Laboral - <i class="ital">maximo 2 referencias</i>
-                                                        </div> 
-                                                        <div class="row">
-                                                            <div class="col-md-4">
-                                                                <div class="block-title-inner" style="text-align: left; padding: 5px;">
-                                                                    <i class="fa fa-ellipsis-v fa-fw" style="padding-right: 10px;"></i>
-                                                                    Nombre
-                                                                </div>
-                                                                <div class="from-group">
-                                                                    <div class="col-md-12">
-                                                                        <input type='text' 
-                                                                           class='form-control refInput' 
-                                                                           id='refProName2' 
-                                                                           name='ref_pro_name_2' 
-                                                                           data-entorno='work_add_Nombre' 
-                                                                           placeholder='. . .'>
-                                                                    </div>
-                                                                </div>
+                                                            <div class="col-xs-6">
+                                                                <label class='radio-inline'>
+                                                                    <input type='radio' 
+                                                                       class='proRadio canExpPre'
+                                                                       id='canExpPreS' 
+                                                                       name='exp_previous' 
+                                                                       value='Si' 
+                                                                       data-entorno='work'>
+                                                                    <label for="canExpPreS"><span></span>Sí</label>
+                                                                </label>
                                                             </div>
-                                                            <div class="col-md-4">
-                                                                <div class="block-title-inner" style="text-align: left; padding: 5px;">
-                                                                    <i class="fa fa-ellipsis-v fa-fw" style="padding-right: 10px;"></i>
-                                                                    Teléfono
-                                                                </div>
-                                                                <div class="from-group">
-                                                                    <div class="col-md-12">
-                                                                        <input type='text' 
-                                                                           class='form-control refInput' 
-                                                                           id='refProPhone2' 
-                                                                           name='ref_pro_phone_2' 
-                                                                           data-entorno='work_add_empresa' 
-                                                                           placeholder='. . .'>
-                                                                    </div>
-                                                                </div>
-                                                            </div>
-                                                            <div class="col-md-4">
-                                                                <div class="block-title-inner" style="text-align: left; padding: 5px;">
-                                                                    <i class="fa fa-ellipsis-v fa-fw" style="padding-right: 10px;"></i>
-                                                                    Relación
-                                                                </div>
-                                                                <div class="from-group">
-                                                                    <input type='text' 
-                                                                       class='form-control refInput' 
-                                                                       id='refProRelation2' 
-                                                                       name='ref_pro_relation_2' 
-                                                                       data-entorno='work_add_empresa' 
-                                                                       placeholder='. . .'>
-                                                                    </div>
-                                                                </div>
+                                                            <div class="col-xs-6">
+                                                                <label class='radio-inline'>
+                                                                    <input type='radio' 
+                                                                       class='proRadio canExpPre'
+                                                                       id='canExpPreN' 
+                                                                       name='exp_previous' 
+                                                                       value='No' 
+                                                                       data-entorno='work'>
+                                                                    <label for="canExpPreN"><span></span>No</label> 
+                                                                </label>
                                                             </div>
                                                         </div>
-                                                    </div>
-                                                </div>  
+                                                        <!-- input radio -> no -->
+                                                        <div class='container'>
+                                                            <div class="col-xs-12" style="margin: 0px -20px; width: 102.3%;padding: 0;">
+                                                                <h4 class="sub-header" style="text-align: left; padding: 5px;">
+                                                                    <i class="fa fa-ellipsis-v fa-fw" style="padding-right: 10px;"></i>
+                                                                    Ingresa los lugares en los que has trabajado
+                                                                </h4>
+                                                                <div class="row">
+                                                                    <h5 class="sub-header" style="text-align: left; width: 90%; margin: 0 auto;">
+                                                                        <i class="fa fa-ellipsis-h fa-fw" style="padding-right: 10px;"></i>
+                                                                        <strong>Empresa 1</strong>
+                                                                    </h5>
+                                                                </div>
+                                                                <div class="form-group">
+                                                                    <div class="block" style="text-align: left; padding: 5px; width: 90%; margin: 0 auto;">
+                                                                        <div class="col-sm-3" style="text-align: left; padding: 5px;">
+                                                                            <label class='sr-only' for='canWplJob'>Puesto</label>
+                                                                                <input type='text' 
+                                                                                    class='form-control proInput wplElement' 
+                                                                                    id='canWplJob' 
+                                                                                    name='wpl_job' 
+                                                                                    data-entorno='work_add_puesto' 
+                                                                                    placeholder='Puesto'>
+                                                                        </div>
+                                                                        <div class="col-sm-3" style="text-align: left; padding: 5px;">
+                                                                            <label class='sr-only' for='canWplCompany'>Nombre Empresa</label>
+                                                                                <input type='text' 
+                                                                                    class='form-control proInput wplElement' 
+                                                                                    id='canWplCompany' 
+                                                                                    name='wpl_company' 
+                                                                                    data-entorno='work_add_empresa' 
+                                                                                    placeholder='Nombre Empresa'>
+                                                                        </div>
+                                                                        <div class="col-sm-2" style="text-align: left; padding: 5px;">
+                                                                            <label class='sr-only' for='canWplBeginning'>Año Inicio</label>
+                                                                                <input type='text' 
+                                                                                    class='form-control proInput wplElement' 
+                                                                                    id='canWplBeginning' 
+                                                                                    name='wpl_beginning' 
+                                                                                    data-entorno='work_add_inicio' 
+                                                                                    placeholder='Año Inicio'>
+                                                                        </div>
+                                                                        <div class="col-sm-2" style="text-align: left; padding: 5px;">
+                                                                            <label class='sr-only' for='canWplEnding'>Año Finalización</label>
+                                                                                <input type='text' 
+                                                                                    class='form-control proInput wplElement' 
+                                                                                    id='canWplEnding' 
+                                                                                    name='wpl_ending' 
+                                                                                    data-entorno='work_add_fin' 
+                                                                                    placeholder='Año Finalización'>
+                                                                        </div>
+                                                                        <div class="col-sm-2" style="text-align: left; padding: 5px;">
+                                                                              <select class='form-control proSelect wplElement' 
+                                                                                      id='canWplStatus' 
+                                                                                      name='wpl_status' 
+                                                                                      data-entorno='work_add_status'>
+                                                                                <option value=''>Estatus</option>
+                                                                                <option value='Actual'>Actual</option>
+                                                                                <option value='Terminación por despido'>Terminación por despido</option>
+                                                                                <option value='Terminación por renuncia'>Terminación por renuncia</option>
+                                                                              </select>
+                                                                        </div>
+                                                                        <div class="clear"></div>
+                                                                        <div class="form-group">
+                                                                            <div class="row">
+                                                                                <div class="block full">
+                                                                                    <div class="col-sm-10"></div>
+                                                                                    <div class="col-sm-2">
+                                                                                        <button class='btn btn-default btn-success' id='add-job' disabled><i class="fa fa-plus" style="padding: 5px;"></i>Agragar Referencias</button>
+                                                                                    </div>
+                                                                                </div>
+                                                                            </div>
+                                                                        </div>
+                                                                        <div class="clear"></div>
+                                                                        <div class="" style="/*display: none;*/ ">
+                                                                            <!-- Referencias empresa 1 -->
+                                                                                <!-- Ref - 01 -->
+                                                                                    <div class="row">
+                                                                                        <h6 class="sub-header" style="text-align: left; width: 100%; margin: 0 auto; padding-left: 20px;">
+                                                                                            <i class="fa fa-ellipsis-h fa-fw" style="padding-right: 10px;"></i>
+                                                                                            <strong>Referencia 1</strong>
+                                                                                        </h6>
+                                                                                    </div>
+                                                                                    <div class="form-group">
+                                                                                        <div class="block" style="text-align: left; padding: 5px; width: 90%; margin: 0 auto;">
+                                                                                            <div class="col-sm-4" style="text-align: left; padding: 5px;">
+                                                                                                <label class='sr-only' for='refProName1'>Nombre</label>
+                                                                                                  <input type='text' 
+                                                                                                    class='form-control refInput' 
+                                                                                                    id='refProName1' 
+                                                                                                    name='ref_pro_name_1' 
+                                                                                                    data-entorno='work_add_Nombre' 
+                                                                                                    placeholder='Nombre'>
+                                                                                            </div>
+                                                                                            <div class="col-sm-4" style="text-align: left; padding: 5px;">
+                                                                                                <label class='sr-only' for='refProPhone1'>Teléfono</label>
+                                                                                                    <input type='text' 
+                                                                                                        class='form-control refInput' 
+                                                                                                        id='refProPhone1' 
+                                                                                                        name='ref_pro_phone_1' 
+                                                                                                        data-entorno='work_add_empresa' 
+                                                                                                        placeholder='Teléfono'>
+                                                                                            </div>
+                                                                                            <div class="col-sm-4" style="text-align: left; padding: 5px;">
+                                                                                                <label class='sr-only' for='refProRelation1'>Relación</label>
+                                                                                                    <input type='text' 
+                                                                                                        class='form-control refInput' 
+                                                                                                        id='refProRelation1' 
+                                                                                                        name='ref_pro_relation_1' 
+                                                                                                        data-entorno='work_add_empresa' 
+                                                                                                        placeholder='Relación'>
+                                                                                            </div>
+                                                                                            <div class="clear"></div>
+                                                                                        </div>
+                                                                                    </div>
+                                                                                <!-- end -->
+                                                                                <!-- Ref - 02 -->
+                                                                                    <div class="row">
+                                                                                        <h6 class="sub-header" style="text-align: left; width: 100%; margin: 0 auto; padding-left: 20px;">
+                                                                                            <i class="fa fa-ellipsis-h fa-fw" style="padding-right: 10px;"></i>
+                                                                                            <strong>Referencia 2</strong>
+                                                                                        </h6>
+                                                                                    </div>
+                                                                                    <div class="form-group">
+                                                                                        <div class="block" style="text-align: left; padding: 5px; width: 90%; margin: 0 auto;">
+                                                                                            <div class="col-sm-4" style="text-align: left; padding: 5px;">
+                                                                                                <label class='sr-only' for='refProName1'>Nombre</label>
+                                                                                                  <input type='text' 
+                                                                                                    class='form-control refInput' 
+                                                                                                    id='refProName1' 
+                                                                                                    name='ref_pro_name_1' 
+                                                                                                    data-entorno='work_add_Nombre' 
+                                                                                                    placeholder='Nombre'>
+                                                                                            </div>
+                                                                                            <div class="col-sm-4" style="text-align: left; padding: 5px;">
+                                                                                                <label class='sr-only' for='refProPhone1'>Teléfono</label>
+                                                                                                    <input type='text' 
+                                                                                                        class='form-control refInput' 
+                                                                                                        id='refProPhone1' 
+                                                                                                        name='ref_pro_phone_1' 
+                                                                                                        data-entorno='work_add_empresa' 
+                                                                                                        placeholder='Teléfono'>
+                                                                                            </div>
+                                                                                            <div class="col-sm-4" style="text-align: left; padding: 5px;">
+                                                                                                <label class='sr-only' for='refProRelation1'>Relación</label>
+                                                                                                    <input type='text' 
+                                                                                                        class='form-control refInput' 
+                                                                                                        id='refProRelation1' 
+                                                                                                        name='ref_pro_relation_1' 
+                                                                                                        data-entorno='work_add_empresa' 
+                                                                                                        placeholder='Relación'>
+                                                                                            </div>
+                                                                                            <div class="clear"></div>
+                                                                                        </div>
+                                                                                    </div>
+                                                                                <!-- end -->
+                                                                            <!-- end -->
+                                                                        </div>
+                                                                    </div>
+                                                                </div>                                                                
+                                                                <div class="row">
+                                                                    <h5 class="sub-header" style="text-align: left; width: 90%; margin: 0 auto;">
+                                                                        <i class="fa fa-ellipsis-h fa-fw" style="padding-right: 10px;"></i>
+                                                                        <strong>Empresa 2</strong>
+                                                                    </h5>
+                                                                </div>
+                                                                <div class="form-group">
+                                                                    <div class="block" style="text-align: left; padding: 5px; width: 90%; margin: 0 auto;">
+                                                                        <div class="col-sm-3" style="text-align: left; padding: 5px;">
+                                                                            <label class='sr-only' for='canWplJob'>Puesto</label>
+                                                                                <input type='text' 
+                                                                                    class='form-control proInput wplElement' 
+                                                                                    id='canWplJob' 
+                                                                                    name='wpl_job' 
+                                                                                    data-entorno='work_add_puesto' 
+                                                                                    placeholder='Puesto'>
+                                                                        </div>
+                                                                        <div class="col-sm-3" style="text-align: left; padding: 5px;">
+                                                                            <label class='sr-only' for='canWplCompany'>Nombre Empresa</label>
+                                                                                <input type='text' 
+                                                                                    class='form-control proInput wplElement' 
+                                                                                    id='canWplCompany' 
+                                                                                    name='wpl_company' 
+                                                                                    data-entorno='work_add_empresa' 
+                                                                                    placeholder='Nombre Empresa'>
+                                                                        </div>
+                                                                        <div class="col-sm-2" style="text-align: left; padding: 5px;">
+                                                                            <label class='sr-only' for='canWplBeginning'>Año Inicio</label>
+                                                                                <input type='text' 
+                                                                                    class='form-control proInput wplElement' 
+                                                                                    id='canWplBeginning' 
+                                                                                    name='wpl_beginning' 
+                                                                                    data-entorno='work_add_inicio' 
+                                                                                    placeholder='Año Inicio'>
+                                                                        </div>
+                                                                        <div class="col-sm-2" style="text-align: left; padding: 5px;">
+                                                                            <label class='sr-only' for='canWplEnding'>Año Finalización</label>
+                                                                                <input type='text' 
+                                                                                    class='form-control proInput wplElement' 
+                                                                                    id='canWplEnding' 
+                                                                                    name='wpl_ending' 
+                                                                                    data-entorno='work_add_fin' 
+                                                                                    placeholder='Año Finalización'>
+                                                                        </div>
+                                                                        <div class="col-sm-2" style="text-align: left; padding: 5px;">
+                                                                              <select class='form-control proSelect wplElement' 
+                                                                                      id='canWplStatus' 
+                                                                                      name='wpl_status' 
+                                                                                      data-entorno='work_add_status'>
+                                                                                <option value=''>Estatus</option>
+                                                                                <option value='Actual'>Actual</option>
+                                                                                <option value='Terminación por despido'>Terminación por despido</option>
+                                                                                <option value='Terminación por renuncia'>Terminación por renuncia</option>
+                                                                              </select>
+                                                                        </div>
+                                                                        <div class="clear"></div>
+                                                                        <div class="form-group">
+                                                                            <div class="row">
+                                                                                <div class="block full">
+                                                                                    <div class="col-sm-10"></div>
+                                                                                    <div class="col-sm-2">
+                                                                                        <button class='btn btn-default btn-success' id='add-job' disabled><i class="fa fa-plus" style="padding: 5px;"></i>Agragar Referencias</button>
+                                                                                        <!--<a href="" class="label label-default" id='add-ref' style="padding: 5px 15px;"><i class="fa fa-plus" style="padding: 5px;"></i>Agragar Referencias...</a>-->
+                                                                                    </div>
+                                                                                </div>
+                                                                            </div>
+                                                                        </div>
+                                                                        <div class="" style="/*display: none;*/">
+                                                                            <!-- Referencias empresa 2 -->
+                                                                                <!-- Ref - 01 -->
+                                                                                    <div class="row">
+                                                                                        <h6 class="sub-header" style="text-align: left; width: 100%; margin: 0 auto; padding-left: 20px;">
+                                                                                            <i class="fa fa-ellipsis-h fa-fw" style="padding-right: 10px;"></i>
+                                                                                            <strong>Referencia 1</strong>
+                                                                                        </h6>
+                                                                                    </div>
+                                                                                    <div class="form-group">
+                                                                                        <div class="block" style="text-align: left; padding: 5px; width: 90%; margin: 0 auto;">
+                                                                                            <div class="col-sm-4" style="text-align: left; padding: 5px;">
+                                                                                                <label class='sr-only' for='refProName1'>Nombre</label>
+                                                                                                  <input type='text' 
+                                                                                                    class='form-control refInput' 
+                                                                                                    id='refProName1' 
+                                                                                                    name='ref_pro_name_1' 
+                                                                                                    data-entorno='work_add_Nombre' 
+                                                                                                    placeholder='Nombre'>
+                                                                                            </div>
+                                                                                            <div class="col-sm-4" style="text-align: left; padding: 5px;">
+                                                                                                <label class='sr-only' for='refProPhone1'>Teléfono</label>
+                                                                                                    <input type='text' 
+                                                                                                        class='form-control refInput' 
+                                                                                                        id='refProPhone1' 
+                                                                                                        name='ref_pro_phone_1' 
+                                                                                                        data-entorno='work_add_empresa' 
+                                                                                                        placeholder='Teléfono'>
+                                                                                            </div>
+                                                                                            <div class="col-sm-4" style="text-align: left; padding: 5px;">
+                                                                                                <label class='sr-only' for='refProRelation1'>Relación</label>
+                                                                                                    <input type='text' 
+                                                                                                        class='form-control refInput' 
+                                                                                                        id='refProRelation1' 
+                                                                                                        name='ref_pro_relation_1' 
+                                                                                                        data-entorno='work_add_empresa' 
+                                                                                                        placeholder='Relación'>
+                                                                                            </div>
+                                                                                            <div class="clear"></div>
+                                                                                        </div>
+                                                                                    </div>
+                                                                                <!-- end -->
+                                                                                <!-- Ref - 02 -->
+                                                                                    <div class="row">
+                                                                                        <h6 class="sub-header" style="text-align: left; width: 100%; margin: 0 auto; padding-left: 20px;">
+                                                                                            <i class="fa fa-ellipsis-h fa-fw" style="padding-right: 10px;"></i>
+                                                                                            <strong>Referencia 2</strong>
+                                                                                        </h6>
+                                                                                    </div>
+                                                                                    <div class="form-group">
+                                                                                        <div class="block" style="text-align: left; padding: 5px; width: 90%; margin: 0 auto;">
+                                                                                            <div class="col-sm-4" style="text-align: left; padding: 5px;">
+                                                                                                <label class='sr-only' for='refProName1'>Nombre</label>
+                                                                                                  <input type='text' 
+                                                                                                    class='form-control refInput' 
+                                                                                                    id='refProName1' 
+                                                                                                    name='ref_pro_name_1' 
+                                                                                                    data-entorno='work_add_Nombre' 
+                                                                                                    placeholder='Nombre'>
+                                                                                            </div>
+                                                                                            <div class="col-sm-4" style="text-align: left; padding: 5px;">
+                                                                                                <label class='sr-only' for='refProPhone1'>Teléfono</label>
+                                                                                                    <input type='text' 
+                                                                                                        class='form-control refInput' 
+                                                                                                        id='refProPhone1' 
+                                                                                                        name='ref_pro_phone_1' 
+                                                                                                        data-entorno='work_add_empresa' 
+                                                                                                        placeholder='Teléfono'>
+                                                                                            </div>
+                                                                                            <div class="col-sm-4" style="text-align: left; padding: 5px;">
+                                                                                                <label class='sr-only' for='refProRelation1'>Relación</label>
+                                                                                                    <input type='text' 
+                                                                                                        class='form-control refInput' 
+                                                                                                        id='refProRelation1' 
+                                                                                                        name='ref_pro_relation_1' 
+                                                                                                        data-entorno='work_add_empresa' 
+                                                                                                        placeholder='Relación'>
+                                                                                            </div>
+                                                                                            <div class="clear"></div>
+                                                                                        </div>
+                                                                                    </div>
+                                                                                <!-- end -->
+                                                                            <!-- end -->
+                                                                        </div>
+                                                                    </div>
+                                                                </div>
+                                                            </div>
+                                                            <div class="clear"></div>
+                                                        </div>
+                                                        <!-- end -->
+                                                        <!-- input radio -> si -->
+                                                        <div class='container'>
+                                                            <div class="col-xs-12" style="margin: 0px -20px; width: 102.3%;padding: 0;">
+                                                                <h4 class="sub-header" style="text-align: left; padding: 5px;">
+                                                                    <i class="fa fa-ellipsis-v fa-fw" style="padding-right: 10px;"></i>
+                                                                    Ingresa los datos del empleo actual
+                                                                </h4>
+                                                                <div class="row">
+                                                                    <h5 class="sub-header" style="text-align: left; width: 90%; margin: 0 auto;">
+                                                                        <i class="fa fa-ellipsis-h fa-fw" style="padding-right: 10px;"></i>
+                                                                        <strong>Empresa Actual</strong>
+                                                                    </h5>
+                                                                </div>
+                                                                <div class="form-group">
+                                                                    <div class="block" style="text-align: left; padding: 5px; width: 90%; margin: 0 auto;">
+                                                                        <div class="col-sm-3" style="text-align: left; padding: 5px;">
+                                                                            <label class='sr-only' for='canWplJob'>Puesto</label>
+                                                                                <input type='text' 
+                                                                                    class='form-control proInput wplElement' 
+                                                                                    id='canWplJob' 
+                                                                                    name='wpl_job' 
+                                                                                    data-entorno='work_add_puesto' 
+                                                                                    placeholder='Puesto'>
+                                                                        </div>
+                                                                        <div class="col-sm-3" style="text-align: left; padding: 5px;">
+                                                                            <label class='sr-only' for='canWplCompany'>Nombre Empresa</label>
+                                                                                <input type='text' 
+                                                                                    class='form-control proInput wplElement' 
+                                                                                    id='canWplCompany' 
+                                                                                    name='wpl_company' 
+                                                                                    data-entorno='work_add_empresa' 
+                                                                                    placeholder='Nombre Empresa'>
+                                                                        </div>
+                                                                        <div class="col-sm-2" style="text-align: left; padding: 5px;">
+                                                                            <label class='sr-only' for='canWplBeginning'>Año Inicio</label>
+                                                                                <input type='text' 
+                                                                                    class='form-control proInput wplElement' 
+                                                                                    id='canWplBeginning' 
+                                                                                    name='wpl_beginning' 
+                                                                                    data-entorno='work_add_inicio' 
+                                                                                    placeholder='Año Inicio'>
+                                                                        </div>
+                                                                        <div class="col-sm-2" style="text-align: left; padding: 5px;">
+                                                                            <label class='sr-only' for='canWplEnding'>Año Finalización</label>
+                                                                                <input type='text' 
+                                                                                    class='form-control proInput wplElement' 
+                                                                                    id='canWplEnding' 
+                                                                                    name='wpl_ending' 
+                                                                                    data-entorno='work_add_fin' 
+                                                                                    placeholder='Default'>
+                                                                        </div>
+                                                                        <div class="col-sm-2" style="text-align: left; padding: 5px;">
+                                                                              <select class='form-control proSelect wplElement' 
+                                                                                      id='canWplStatus' 
+                                                                                      name='wpl_status' 
+                                                                                      data-entorno='work_add_status'>
+                                                                                <option value=''>Estatus</option>
+                                                                                <option value='Actual'>Actual</option>
+                                                                              </select>
+                                                                        </div>
+                                                                        <div class="clear"></div>
+                                                                        <div class="form-group">
+                                                                            <div class="row">
+                                                                                <div class="block full">
+                                                                                    <div class="col-sm-10"></div>
+                                                                                    <div class="col-sm-2">
+                                                                                        <button class='btn btn-default btn-success' id='add-job' disabled><i class="fa fa-plus" style="padding: 5px;"></i>Agragar Referencias</button>
+                                                                                    </div>
+                                                                                </div>
+                                                                            </div>
+                                                                        </div>
+                                                                        <div class="clear"></div>
+                                                                        <div class="" style="/*display: none;*/ ">
+                                                                            <!-- Referencias empresa actual -->
+                                                                                <!-- Ref - 01 -->
+                                                                                    <div class="row">
+                                                                                        <h6 class="sub-header" style="text-align: left; width: 100%; margin: 0 auto; padding-left: 20px;">
+                                                                                            <i class="fa fa-ellipsis-h fa-fw" style="padding-right: 10px;"></i>
+                                                                                            <strong>Referencia 1</strong>
+                                                                                        </h6>
+                                                                                    </div>
+                                                                                    <div class="form-group">
+                                                                                        <div class="block" style="text-align: left; padding: 5px; width: 90%; margin: 0 auto;">
+                                                                                            <div class="col-sm-4" style="text-align: left; padding: 5px;">
+                                                                                                <label class='sr-only' for='refProName1'>Nombre</label>
+                                                                                                  <input type='text' 
+                                                                                                    class='form-control refInput' 
+                                                                                                    id='refProName1' 
+                                                                                                    name='ref_pro_name_1' 
+                                                                                                    data-entorno='work_add_Nombre' 
+                                                                                                    placeholder='Nombre'>
+                                                                                            </div>
+                                                                                            <div class="col-sm-4" style="text-align: left; padding: 5px;">
+                                                                                                <label class='sr-only' for='refProPhone1'>Teléfono</label>
+                                                                                                    <input type='text' 
+                                                                                                        class='form-control refInput' 
+                                                                                                        id='refProPhone1' 
+                                                                                                        name='ref_pro_phone_1' 
+                                                                                                        data-entorno='work_add_empresa' 
+                                                                                                        placeholder='Teléfono'>
+                                                                                            </div>
+                                                                                            <div class="col-sm-4" style="text-align: left; padding: 5px;">
+                                                                                                <label class='sr-only' for='refProRelation1'>Relación</label>
+                                                                                                    <input type='text' 
+                                                                                                        class='form-control refInput' 
+                                                                                                        id='refProRelation1' 
+                                                                                                        name='ref_pro_relation_1' 
+                                                                                                        data-entorno='work_add_empresa' 
+                                                                                                        placeholder='Relación'>
+                                                                                            </div>
+                                                                                            <div class="clear"></div>
+                                                                                        </div>
+                                                                                    </div>
+                                                                                <!-- end -->
+                                                                                <!-- Ref - 02 -->
+                                                                                    <div class="row">
+                                                                                        <h6 class="sub-header" style="text-align: left; width: 100%; margin: 0 auto; padding-left: 20px;">
+                                                                                            <i class="fa fa-ellipsis-h fa-fw" style="padding-right: 10px;"></i>
+                                                                                            <strong>Referencia 2</strong>
+                                                                                        </h6>
+                                                                                    </div>
+                                                                                    <div class="form-group">
+                                                                                        <div class="block" style="text-align: left; padding: 5px; width: 90%; margin: 0 auto;">
+                                                                                            <div class="col-sm-4" style="text-align: left; padding: 5px;">
+                                                                                                <label class='sr-only' for='refProName1'>Nombre</label>
+                                                                                                  <input type='text' 
+                                                                                                    class='form-control refInput' 
+                                                                                                    id='refProName1' 
+                                                                                                    name='ref_pro_name_1' 
+                                                                                                    data-entorno='work_add_Nombre' 
+                                                                                                    placeholder='Nombre'>
+                                                                                            </div>
+                                                                                            <div class="col-sm-4" style="text-align: left; padding: 5px;">
+                                                                                                <label class='sr-only' for='refProPhone1'>Teléfono</label>
+                                                                                                    <input type='text' 
+                                                                                                        class='form-control refInput' 
+                                                                                                        id='refProPhone1' 
+                                                                                                        name='ref_pro_phone_1' 
+                                                                                                        data-entorno='work_add_empresa' 
+                                                                                                        placeholder='Teléfono'>
+                                                                                            </div>
+                                                                                            <div class="col-sm-4" style="text-align: left; padding: 5px;">
+                                                                                                <label class='sr-only' for='refProRelation1'>Relación</label>
+                                                                                                    <input type='text' 
+                                                                                                        class='form-control refInput' 
+                                                                                                        id='refProRelation1' 
+                                                                                                        name='ref_pro_relation_1' 
+                                                                                                        data-entorno='work_add_empresa' 
+                                                                                                        placeholder='Relación'>
+                                                                                            </div>
+                                                                                            <div class="clear"></div>
+                                                                                        </div>
+                                                                                    </div>
+                                                                                <!-- end -->
+                                                                            <!-- end -->
+                                                                        </div>
+                                                                    </div>
+                                                                </div>
+                                                            </div>
+                                                            <div class="clear"></div>
+                                                        </div>
+                                                        <!-- end -->                                                        
+                                                    </div>                                                 
+                                                </div>
                                             </form>
                                         </div>
                                     </section>
                                 </div>
                             </div>
+                                                <!--
+                                                    <div class="row">
+                                                        <div class="col-xs-12">
+                                                            <div class="block full">
+                                                                <div class="block-title" style="text-align: left; padding: 5px;">
+                                                                    <i class="fa fa-ellipsis-v fa-fw" style="padding-right: 10px;"></i>
+                                                                    ¿Has trabajado antes?
+                                                                </div>
+                                                                <div class="from-group">
+                                                                    <div class="col-xs-6">
+                                                                        <label class='radio-inline'>
+                                                                            <input type='radio' 
+                                                                               class='proRadio canExpPre'
+                                                                               id='canExpPreS' 
+                                                                               name='exp_previous' 
+                                                                               value='Si' 
+                                                                               data-entorno='work'>
+                                                                               <label for="canExpPreS"><span></span>Sí</label>
+                                                                        </label>
+                                                                    </div>
+                                                                    <div class="col-xs-6">
+                                                                        <label class='radio-inline'>
+                                                                            <input type='radio' 
+                                                                               class='proRadio canExpPre'
+                                                                               id='canExpPreN' 
+                                                                               name='exp_previous' 
+                                                                               value='No' 
+                                                                               data-entorno='work'>
+                                                                               <label for="canExpPreN"><span></span>No</label> 
+                                                                          </label>
+                                                                    </div>
+                                                                </div><br>
+                                                            </div>
+                                                        </div>
+                                                    </div>-->
+                                                    <!--<div class="row exp-pre" style="display:none">--><!--
+                                                    <div class="row exp-pre" style="">
+                                                        <div class="col-xs-12">
+                                                            <div class="block full">
+                                                                <div class="block-title" style="text-align: left; padding: 5px;">
+                                                                    <i class="fa fa-ellipsis-v fa-fw" style="padding-right: 10px;"></i>
+                                                                    ¿Actualmente Laboras?                                                    </div>
+                                                                <div class="from-group">
+                                                                    <div class="col-xs-6">
+                                                                        <label class='radio-inline'>
+                                                                            <input type='radio' 
+                                                                               class='proRadio canExpCurrent' 
+                                                                               id='canExpCurrentS' 
+                                                                               name='exp_current' 
+                                                                               value='Si' 
+                                                                               data-entorno='work'>
+                                                                               <label for="canExpCurrentS"><span></span>Sí</label>
+                                                                        </label>
+                                                                    </div>
+                                                                    <div class="col-xs-6">
+                                                                        <label class='radio-inline'>
+                                                                            <input type='radio' 
+                                                                               class='proRadio canExpCurrent' 
+                                                                               id='canExpCurrentN' 
+                                                                               name='exp_current' 
+                                                                               value='No' 
+                                                                               data-entorno='work'>
+                                                                               <label for="canExpCurrentN"><span></span>No</label> 
+                                                                          </label>
+                                                                    </div>
+                                                                </div><br>
+                                                            </div>
+                                                        </div>
+                                                    </div>-->
+                                                    <!-- Formulario en caso de seleccionar "SI" -->
+                                                    <!--<div class="row exp-pre-si" style="display:none">--><!--
+                                                    <div class="row exp-pre-si" style="">
+                                                        <div class="col-md-12">
+                                                            <div class="block full">
+                                                                <div class="block-title" style="text-align: left; padding: 5px;">
+                                                                    <i class="fa fa-ellipsis-v fa-fw" style="padding-right: 10px;"></i>
+                                                                    Ingresa el lugar actual de trabajo
+                                                            </div>  
+                                                            <div class="row">
+                                                                <div class="col-md-6">
+                                                                    <div class="block-title-inner" style="text-align: left; padding: 5px;">
+                                                                        <i class="fa fa-ellipsis-v fa-fw" style="padding-right: 10px;"></i>
+                                                                        Puesto                                                   
+                                                                    </div>
+                                                                    <div class="from-group">
+                                                                        <div class="col-md-2"></div>
+                                                                        <div class="col-md-8">
+                                                                            <input type='text' 
+                                                                               class='form-control proInput wplElement' 
+                                                                               id='canWplJob' 
+                                                                               name='wpl_job' 
+                                                                               data-entorno='work_add_puesto' 
+                                                                               placeholder='. . .'>
+                                                                        </div>
+                                                                        <div class="col-md-2"></div>
+                                                                    </div>
+                                                                </div>
+                                                                <div class="col-md-6">
+                                                                    <div class="block-title-inner" style="text-align: left; padding: 5px;">
+                                                                        <i class="fa fa-ellipsis-v fa-fw" style="padding-right: 10px;"></i>
+                                                                        Nombre Empresa
+                                                                    </div>
+                                                                    <div class="from-group">
+                                                                        <div class="col-md-2"></div>
+                                                                        <div class="col-md-8">
+                                                                            <input type='text' 
+                                                                               class='form-control proInput wplElement' 
+                                                                               id='canWplCompany' 
+                                                                               name='wpl_company' 
+                                                                               data-entorno='work_add_empresa' 
+                                                                               placeholder='. . .'>
+                                                                        </div>
+                                                                        <div class="col-md-2"></div>
+                                                                    </div>
+                                                                </div>
+                                                                <div class="col-md-6">
+                                                                    <div class="block-title-inner" style="text-align: left; margin-top: 20px; padding: 5px;">
+                                                                        <i class="fa fa-ellipsis-v fa-fw" style="padding-right: 10px;"></i>
+                                                                        Año Inicio
+                                                                    </div>
+                                                                    <div class="from-group">
+                                                                        <div class="col-md-2"></div>
+                                                                        <div class="col-md-8">
+                                                                            <input type='text' 
+                                                                               class='form-control proInput wplElement' 
+                                                                               id='canWplBeginning' 
+                                                                               name='wpl_beginning' 
+                                                                               data-entorno='work_add_inicio' 
+                                                                               placeholder='. . .'>
+                                                                        </div>
+                                                                        <div class="col-md-2"></div>
+                                                                    </div>
+                                                                </div><br><br>
+                                                                <div class="col-md-6">
+                                                                    <div class="block-title-inner" style="text-align: left; margin-top: 20px; padding: 5px;">
+                                                                        <i class="fa fa-ellipsis-v fa-fw" style="padding-right: 10px;"></i>
+                                                                        Año Finalización
+                                                                    </div>
+                                                                    <div class="from-group">
+                                                                        <div class="col-md-2"></div>
+                                                                        <div class="col-md-8">
+                                                                            <input type='text' 
+                                                                               class='form-control proInput wplElement' 
+                                                                               id='canWplEnding' 
+                                                                               name='wpl_ending' 
+                                                                               data-entorno='work_add_fin' 
+                                                                               placeholder='Default...'>
+                                                                        </div>
+                                                                        <div class="col-md-2"></div>
+                                                                    </div>
+                                                                </div>-->
+                                                                <!--
+                                                                <div class="col-md-6">
+                                                                    <div class="block-title-inner" style="text-align: left; margin-top: 20px; padding: 5px;">
+                                                                        <i class="fa fa-ellipsis-v fa-fw" style="padding-right: 10px;"></i>
+                                                                        Estatus
+                                                                    </div>
+                                                                    <div class="from-group">
+                                                                        <div class="col-md-2"></div>
+                                                                        <div class="col-md-8">
+                                                                            <select class='form-control proSelect wplElement' 
+                                                                                id='canWplStatus' 
+                                                                                name='wpl_status' 
+                                                                                data-entorno='work_add_status'>
+                                                                                <option value=''>Estatus</option>
+                                                                                <option value='Actual'>Actual</option>
+                                                                                <option value='Terminación por despido'>
+                                                                                Terminación por despido
+                                                                                </option>
+                                                                                <option value='Terminación por renuncia'>Terminación por renuncia</option>
+                                                                            </select>
+                                                                        </div>
+                                                                        <div class="col-md-2"></div>
+                                                                    </div>
+                                                                </div>--><!--
+                                                            </div>
+                                                        </div>
+                                                        <div class="row">
+                                                            <div class="block full">
+                                                                <a href="" class="label label-default" style="padding: 5px 15px;"><i class="fa fa-plus" style="padding: 5px;"></i>Agragar Otro...</a>
+                                                            </div>
+                                                        </div>
+                                                    </div>-->
+                                                    <!-- Formulario en caso de seleccionar "NO" --><!--
+                                                    <div class="row exp-pre-no" style="display:none;">
+                                                        <div class="col-md-12">
+                                                            <div class="block full">
+                                                                <div class="block-title" style="text-align: left; padding: 5px;">
+                                                                    <i class="fa fa-ellipsis-v fa-fw" style="padding-right: 10px;"></i>
+                                                                    Ingresa los lugares en los que has trabajado - <i class="ital">maximo 2 areas de trabajo</i>
+                                                            </div>  
+                                                            <div class="row">
+                                                                <div class="col-md-4">
+                                                                    <div class="block-title-inner" style="text-align: left; padding: 5px;">
+                                                                        <i class="fa fa-ellipsis-v fa-fw" style="padding-right: 10px;"></i>
+                                                                        Puesto                                                   
+                                                                    </div>
+                                                                    <div class="from-group">
+                                                                        <div class="col-md-12">
+                                                                            <input type='text' 
+                                                                               class='form-control proInput wplElement' 
+                                                                               id='canWplJob' 
+                                                                               name='wpl_job' 
+                                                                               data-entorno='work_add_puesto' 
+                                                                               placeholder='. . .'>
+                                                                        </div>
+                                                                    </div>
+                                                                </div>
+                                                                <div class="col-md-4">
+                                                                    <div class="block-title-inner" style="text-align: left; padding: 5px;">
+                                                                        <i class="fa fa-ellipsis-v fa-fw" style="padding-right: 10px;"></i>
+                                                                        Nombre Empresa                                                  
+                                                                    </div>
+                                                                    <div class="from-group">
+                                                                        <div class="col-md-12">
+                                                                            <input type='text' 
+                                                                               class='form-control proInput wplElement' 
+                                                                               id='canWplCompany' 
+                                                                               name='wpl_company' 
+                                                                               data-entorno='work_add_empresa' 
+                                                                               placeholder='. . .'>
+                                                                        </div>
+                                                                    </div>
+                                                                </div>
+                                                                <div class="col-md-4">
+                                                                    <div class="block-title-inner" style="text-align: left; padding: 5px;">
+                                                                        <i class="fa fa-ellipsis-v fa-fw" style="padding-right: 10px;"></i>
+                                                                        Año Inicio
+                                                                    </div>
+                                                                    <div class="from-group">
+                                                                        <div class="col-md-12">
+                                                                            <input type='text' 
+                                                                               class='form-control proInput wplElement' 
+                                                                               id='canWplBeginning' 
+                                                                               name='wpl_beginning' 
+                                                                               data-entorno='work_add_inicio' 
+                                                                               placeholder='. . .'>
+                                                                        </div>
+                                                                    </div>
+                                                                </div>
+                                                                <div class="col-md-6">
+                                                                    <div class="block-title-inner" style="text-align: left; margin-top: 20px; padding: 5px;">
+                                                                        <i class="fa fa-ellipsis-v fa-fw" style="padding-right: 10px;"></i>
+                                                                        Año Finalización
+                                                                    </div>
+                                                                    <div class="from-group">
+                                                                        <div class="col-md-2"></div>
+                                                                        <div class="col-md-8">
+                                                                            <input type='text' 
+                                                                               class='form-control proInput wplElement' 
+                                                                               id='canWplEnding' 
+                                                                               name='wpl_ending' 
+                                                                               data-entorno='work_add_fin' 
+                                                                               placeholder='. . .'>
+                                                                        </div>
+                                                                        <div class="col-md-2"></div>
+                                                                    </div>
+                                                                </div>
+                                                                <div class="col-md-6">
+                                                                    <div class="block-title-inner" style="text-align: left; margin-top: 20px; padding: 5px;">
+                                                                        <i class="fa fa-ellipsis-v fa-fw" style="padding-right: 10px;"></i>
+                                                                        Estatus
+                                                                    </div>
+                                                                    <div class="from-group">
+                                                                        <div class="col-md-2"></div>
+                                                                        <div class="col-md-8">
+                                                                            <select class='form-control proSelect wplElement' 
+                                                                                id='canWplStatus' 
+                                                                                name='wpl_status' 
+                                                                                data-entorno='work_add_status'>
+                                                                                <option value=''>Estatus</option>
+                                                                                <option value='Actual'>Actual</option>
+                                                                                <option value='Terminación por despido'>
+                                                                                Terminación por despido
+                                                                                </option>
+                                                                                <option value='Terminación por renuncia'>Terminación por renuncia</option>
+                                                                            </select>
+                                                                        </div>
+                                                                        <div class="col-md-2"></div>
+                                                                    </div>
+                                                                </div>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                    <div class="row exp-pre-jap" style="/*display:none;*/">
+                                                        <div class="col-md-12">
+                                                            <div class="block full">
+                                                                <div class="block-title" style="text-align: left; padding: 5px;">
+                                                                    <i class="fa fa-ellipsis-v fa-fw" style="padding-right: 10px;"></i>
+                                                                    Referencia Laboral - <i class="ital">maximo 2 referencias</i>
+                                                            </div> 
+                                                            <div class="row">
+                                                                <div class="col-md-4">
+                                                                    <div class="block-title-inner" style="text-align: left; padding: 5px;">
+                                                                        <i class="fa fa-ellipsis-v fa-fw" style="padding-right: 10px;"></i>
+                                                                        Nombre
+                                                                    </div>
+                                                                    <div class="from-group">
+                                                                        <div class="col-md-12">
+                                                                            <input type='text' 
+                                                                               class='form-control refInput' 
+                                                                               id='refProName2' 
+                                                                               name='ref_pro_name_2' 
+                                                                               data-entorno='work_add_Nombre' 
+                                                                               placeholder='. . .'>
+                                                                        </div>
+                                                                    </div>
+                                                                </div>
+                                                                <div class="col-md-4">
+                                                                    <div class="block-title-inner" style="text-align: left; padding: 5px;">
+                                                                        <i class="fa fa-ellipsis-v fa-fw" style="padding-right: 10px;"></i>
+                                                                        Teléfono
+                                                                    </div>
+                                                                    <div class="from-group">
+                                                                        <div class="col-md-12">
+                                                                            <input type='text' 
+                                                                               class='form-control refInput' 
+                                                                               id='refProPhone2' 
+                                                                               name='ref_pro_phone_2' 
+                                                                               data-entorno='work_add_empresa' 
+                                                                               placeholder='. . .'>
+                                                                        </div>
+                                                                    </div>
+                                                                </div>
+                                                                <div class="col-md-4">
+                                                                    <div class="block-title-inner" style="text-align: left; padding: 5px;">
+                                                                        <i class="fa fa-ellipsis-v fa-fw" style="padding-right: 10px;"></i>
+                                                                        Relación
+                                                                    </div>
+                                                                    <div class="from-group">
+                                                                        <input type='text' 
+                                                                           class='form-control refInput' 
+                                                                           id='refProRelation2' 
+                                                                           name='ref_pro_relation_2' 
+                                                                           data-entorno='work_add_empresa' 
+                                                                           placeholder='. . .'>
+                                                                        </div>
+                                                                    </div>
+                                                                </div>
+                                                            </div>
+                                                        </div>
+                                                    </div> 
+                                                -->
+                                            <!--</form>
+                                        </div>
+                                    </section>
+                                </div>
+                            </div>-->
                         <!-- END -> FORMULARIO: Experiencia Laboral -->
                     </div> 
                 </div>
@@ -1469,19 +2025,8 @@
     <script src="http://ajax.googleapis.com/ajax/libs/jquery/2.1.1/jquery.min.js"></script>
     <script>!window.jQuery && document.write(decodeURI('%3Cscript src="js/vendor/jquery-2.1.1.min.js"%3E%3C/script%3E'));</script>
 
-    <!-- Bootstrap.js, Jquery plugins and Custom JS code -->
-    <script src="js/vendor/bootstrap.min.js"></script>
-    <script src="js/plugins.js"></script>
-    <script src="js/app.js"></script>
-
-    <!-- Load and execute javascript code used only in this page -->
-    <script src="js/pages/readyDashboard.js"></script>
-    <script>$(function(){ ReadyDashboard.init(); });</script>
-
-
-
     <script>
-        $(document).on("ready", function () {
+        $(document).ready(function () {
             $(".tab-pane").hide(); //esconder contenido
             $("ul.nav-tabs li:first").addClass("active").show(); //Agrega la clase 'active' a la pestaña activa
             $(".tab-pane:first").show();
@@ -1493,8 +2038,19 @@
                 var activeTab = $(this).find("a").attr("href");
                 $(activeTab).fadeIn();
                 return false;
-            });
+            });            
         });
     </script>
+
+    <!-- Bootstrap.js, Jquery plugins and Custom JS code -->
+    <script src="js/vendor/bootstrap.min.js"></script>
+    <script src="js/plugins.js"></script>
+    <script src="js/app.js"></script>
+
+    <!-- Load and execute javascript code used only in this page -->
+    <script src="js/pages/readyDashboard.js"></script>
+    <script>$(function(){ ReadyDashboard.init(); });</script>
+
+
 </body>
 </html>

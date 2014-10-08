@@ -780,8 +780,8 @@ a.sidebar-title:focus {
     box-shadow: 0 2px 0 rgba(218, 224, 232, .5);
 }
 
-.block .block {
-    border: 1px solid #dae0e8;
+.block .block{
+    /*border: 1px solid #dae0e8;*/
     -webkit-box-shadow: none;
     box-shadow: none;
 }
@@ -3659,6 +3659,9 @@ input[type="radio"]:checked + label span {
 .ital{
     font-size: 0.9em;
     color: rgba(0,0,0,0.5);
+}
+.clear {
+    clear: both;
 }
 @media (max-width:767px){
     .hidden-xs-tab a:hover strong.hidden-strong{
