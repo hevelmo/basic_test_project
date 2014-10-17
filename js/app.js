@@ -368,7 +368,7 @@ var App = function() {
                                 color: '#fff',
                                 size: '3px',
                                 touchScrollStep: 100,
-                                railVisible: false,
+                                railVisible: true,
                                 railOpacity: 1
                             });
                     }
