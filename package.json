@@ -1,0 +1,27 @@
+{
+  "name": "BasicProject_test",
+  "version": "0.0.3",
+  "description": "Front End",
+  "main": "Gruntfile.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/hevelmo/basic_test_project.git"
+  },
+  "keywords": [
+    "gruntJs"
+  ],
+  "author": "Heveiberto Velasco Mora (hevelmo)",
+  "license": "GPL",
+  "bugs": {
+    "url": "https://github.com/hevelmo/basic_test_project/issues"
+  },
+  "homepage": "https://github.com/hevelmo/basic_test_project",
+  "devDependencies": {
+    "grunt": "^0.4.5",
+    "grunt-contrib-stylus": "^0.20.0",
+    "grunt-contrib-watch": "^0.6.1"
+  }
+}

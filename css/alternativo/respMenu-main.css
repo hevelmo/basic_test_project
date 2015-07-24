@@ -1,0 +1,86 @@
+@media (max-width:767px){
+    .hidden-xs-tab a:hover strong.hidden-strong{
+        display: block;
+        position: absolute;
+        width: 189px;
+        padding: 0;
+        background: rgba(255,255,255,0.9);
+        border: 1px solid rgba(0,0,0,0.5);
+        border-radius: 3px;
+        box-shadow: 0 0 3px rgba(0,0,0,0.5);
+        color: #000;
+        top: 50px;
+        left: -15px;
+    }
+}
+/* Desktops and laptops ----------- */
+@media only screen and (min-width : 1224px) {
+    .respLong {
+        /*width: 80px;*/
+        display: inline-block;
+        vertical-align: middle;
+        padding: 0;
+        position: relative;
+        margin: 0;
+        line-height: 16px;
+    }
+}
+@media only screen and (min-width: 1024px) {
+    .respLong {
+        width: 100px;
+        display: inline-block;
+        vertical-align: middle;
+        padding: 0;
+        position: relative;
+        margin: 0;
+        line-height: 16px;
+    }
+}
+@media only screen and (min-width : 320px) and (max-width : 568px) {
+    .nav.navbar-nav-custom > li {
+        margin-right: 20px;
+    }
+    .form_content {
+        max-width: 95%;
+        padding: 5px;
+    }
+    header.caption_info,
+    section.body_form_info {
+        margin: 5px;
+    }
+    .ico_content {
+        margin-top: 5px;
+        padding: 3px;
+    }
+    .text-primary {
+        font-size: 1.4em;
+    }
+    .info_form {
+        font-size: 1.3em;
+        padding: 5px 0 5px 0;
+    }
+    .form_inline_content {
+        padding: 2px;
+        margin: 5px;
+    }
+    }.block {
+        margin: 0 0 2px;
+    }
+    .block.full {
+        padding: 10px 7px;
+    }
+    .col-md-2,
+    .col-md-3,
+    .col-md-4,
+    .col-md-5,
+    .col-md-6,
+    .col-md-12 {
+        margin-top: 6px;
+        margin-bottom: 8px;
+    }
+
+    .space-out {
+        margin-top: -6px;
+        margin-bottom: -8px;
+    }
+}

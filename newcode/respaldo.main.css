@@ -1,0 +1,47 @@
+#alert {
+    z-index: 100;
+    position: fixed;
+    left: 36%;
+    right: 36%;
+}
+.mensaje {
+    border-radius: 3px;
+    box-shadow: 1px 1px 3px rgba(0,0,0,0.5);
+    padding: 10px;
+    position: relative;
+    margin-left: 10px;
+    margin-right: 10px;
+    width: 100%;
+}
+.globe, .title {
+    display: inline-block;
+    padding: 10px;
+    vertical-align: middle;
+}
+.globe {
+    background: #fff;
+    border-radius: 100%;
+    box-shadow: 1px 1px 2px rgba(0,0,0,0.6);
+    color: #deb25c;
+    height: 40px;
+    position: relative;
+    text-align: center;
+    text-shadow: 1px -1px 1px rgba(0,0,0,0.8);
+    width: 40px;
+}
+.title {
+    font-size: 1.157em;
+    padding: 5px;
+    margin-left: 0px;
+    text-shadow: 1px 1px 2px rgba(0,0,0,0.6);
+    word-wrap: break-word;
+}
+.log-radio {
+    position: absolute;
+    border: 1px solid red;
+}
+span.error, span.ok {
+    position: absolute;
+    top: 10px;
+    right: 36px;
+}
